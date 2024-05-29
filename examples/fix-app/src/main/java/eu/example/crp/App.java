@@ -25,6 +25,10 @@ import org.slf4j.LoggerFactory;
 import com.documents4j.api.DocumentType;
 import com.documents4j.job.LocalConverter;
 
+/**
+ * Renames renames reviewer, supervisor feedback files to match strict file naming requirements.
+ * Converts documents to pdf files.
+ */
 public class App
 {
 	public static void main(String[] args) throws IOException
@@ -37,6 +41,10 @@ public class App
 		processTirtutit("d:/Downloads/", "d:/");
 	}
 
+	/**
+	 * Renames copies turninit report files with random names from sourceFolder to destination folder by renaming them to match strict file naming requirements.
+	 * Checks if similarity index is less than 10, ignores the rest.
+	 */
 	private static void processTirtutit(String sourceFolder, String resultsFolder) throws IOException
 	{
 		var thisYear = DateTimeFormatter.ofPattern("yyyy").withZone(ZoneId.systemDefault()).format(Instant.now());
