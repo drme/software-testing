@@ -26,7 +26,7 @@ import com.documents4j.api.DocumentType;
 import com.documents4j.job.LocalConverter;
 
 /**
- * Renames renames reviewer, supervisor feedback files to match strict file naming requirements.
+ * Renames  reviewer, supervisor feedback, and Turninit report files to match strict file naming requirements for submission.
  * Converts documents to pdf files.
  */
 public class App
@@ -42,7 +42,7 @@ public class App
 	}
 
 	/**
-	 * Renames copies turninit report files with random names from sourceFolder to destination folder by renaming them to match strict file naming requirements.
+	 * Renames copies Turninit report files with random names from sourceFolder to destination folder by renaming them to match strict file naming requirements.
 	 * Checks if similarity index is less than 10, ignores the rest.
 	 */
 	private static void processTirtutit(String sourceFolder, String resultsFolder) throws IOException
@@ -109,6 +109,9 @@ public class App
 		return null;
 	}
 	
+	/**
+	 * Extracts student name from document and renames it nicely. Saves word document to pdf.
+	 */
 	private static void process(String folder, String suffix) throws IOException
 	{
 		try (var stream = Files.list(Paths.get(folder)))
