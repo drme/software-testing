@@ -54,5 +54,4 @@ public class CalculatorTests
 		
 		Assert.assertEquals(8.0, result, 0.000001);
 	}
-	
 }

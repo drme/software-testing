@@ -13,7 +13,6 @@ class Math
 		return temp_c;
 	}
 	
-	
 	public double sin(double x)
 	{
 		x = toRad(x);

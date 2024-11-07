@@ -1,7 +1,6 @@
 
 public class PancakeSorter
 {
-
 	static <T> boolean swap(T[] array, int idx, int idy)
 	{
 		T swap = array[idx];
@@ -35,7 +34,6 @@ public class PancakeSorter
 	 * @param right The last index of an array
 	 * @param array The array to be sorted
 	 **/
-
 	private static <T extends Comparable<T>> void doSort(T[] array, int left, int right)
 	{
 		if (left < right)
@@ -53,7 +51,6 @@ public class PancakeSorter
 	 * @param left The first index of an array
 	 * @param right The last index of an array Finds the partition index of an array
 	 **/
-
 	private static <T extends Comparable<T>> int partition(T[] array, int left, int right)
 	{
 		int mid = (left + right) / 2;
@@ -78,5 +75,4 @@ public class PancakeSorter
 		}
 		return left;
 	}
-
 }

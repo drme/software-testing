@@ -179,7 +179,4 @@ public class CalculatorTests
 		
 		Assert.assertEquals(6, result, 0.001);
 	}
-	
-	
-	
 }

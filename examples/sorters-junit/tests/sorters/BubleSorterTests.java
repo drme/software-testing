@@ -26,9 +26,7 @@ public class BubleSorterTests
 				Arguments.of(new int[] { 3, 2, 1 }, new int[] { 1, 2, 3 }),
 				Arguments.of(new int[] { 0xbadf00d, 0xf00 }, new int[] { 0xf00, 0xbadf00d }),
 				Arguments.of(new int[] { 4,7,4,7,4,7,267,67234 }, new int[] { 4,4,4,7,7,7, 267, 67234 })
-				);
+			);
 	}
-	
-	
 	
 }

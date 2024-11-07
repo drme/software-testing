@@ -60,5 +60,4 @@ public class PancakeSoterTests
 		
 		Assert.assertEquals("empty list not good", expected, result);
 	}
-	
 }
